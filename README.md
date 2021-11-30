@@ -1,5 +1,8 @@
 
-# Adaptive Risk Minimization: A Meta-Learning Approach for Tackling Group Shift
+ * Code for the upcoming Neurips 2021 paper. Some code and hyperparameters differ from the current arxiv version (v3). 
+ * Henrik will be offline Dec 2 - Dec 14 so responses to some questions may be slower during this time period.
+
+# Adaptive Risk Minimization: Learning to Adapt to Domain Shift
 
 The structure of this repo and the way certain details around the training loop and evaluation loop is set up is inspired by and adapted from the [DomainBed repo](https://github.com/facebookresearch/DomainBed/tree/main/domainbed) and the [Wilds repo](https://github.com/p-lambda/wilds).
 
