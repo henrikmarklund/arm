@@ -1,7 +1,8 @@
 *Henrik will be offline Dec 2 - Dec 14 so responses to some questions may be slower during this time period.*
 
 # Adaptive Risk Minimization: Learning to Adapt to Domain Shift
-*Code for the upcoming Neurips 2021 paper. Some code and hyperparameters differ from the current arxiv version (v3).*
+
+Paper: [https://arxiv.org/abs/2007.02931](https://arxiv.org/abs/2007.02931)
 
 The structure of this repo and the way certain details around the training loop and evaluation loop is set up is inspired by and adapted from the [DomainBed repo](https://github.com/facebookresearch/DomainBed/tree/main/domainbed) and the [Wilds repo](https://github.com/p-lambda/wilds).
 
@@ -77,7 +78,7 @@ python run.py --algorithm ARM-LL --sampler group --uniform_over_groups 1 --exp_n
 python run.py --algorithm ARM-LL --sampler group --uniform_over_groups 1 --exp_name arm_bn $SHARED_ARGS
 ```
 
-#### CML ablation
+##### CML ablation
 ```
 python run.py --algorithm ARM-CML --sampler regular --experiment_name cml_ablation $SHARED_ARGS
 ```
@@ -103,3 +104,16 @@ python run.py --eval_on test --test 1 -- train 0 --ckpt_folders mnist_erm_0_1231
 
 You can vary support size with `--support_size`.
 
+
+## Citation
+
+If you find this codebase useful in your research, consider citing:
+
+```
+@inproceedings{arm,
+    author={Zhang, M. and Marklund, H. and Dhawan, N. and Gupta, A. and Levine, S. and Finn, C.},
+    title={Adaptive Risk Minimization: Learning to Adapt to Domain Shift},
+    booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+    year={2021},
+}
+```
