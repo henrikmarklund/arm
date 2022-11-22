@@ -7,7 +7,7 @@ tqdm==4.36.1
 albumentations==0.4.3
 args==0.1.0
 jpeg4py==0.1.4
-Pillow==7.0.0
+Pillow==9.3.0
 scikit_learn==0.22.1
 tabulate==0.8.6
 tensorboard==1.14.0
