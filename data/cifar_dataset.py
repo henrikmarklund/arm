@@ -8,7 +8,7 @@ import torch
 from collections import defaultdict
 from pathlib import Path
 
-from albumentations.pytorch import ToTensor
+from albumentations.pytorch import ToTensorV2 as ToTensor
 from torch.utils.data import Dataset
 
 import torchvision
